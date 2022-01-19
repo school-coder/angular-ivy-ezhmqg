@@ -10,11 +10,13 @@ export class AppComponent  {
 
   renderOverlay=false;
 
-  show() {
+  show($event) {
+    $event.preventDefault();
     this.renderOverlay = true;
   }
 
-  hide() {
+  hide($event) {
+    $event.preventDefault();
     this.renderOverlay = false;
   }
 }

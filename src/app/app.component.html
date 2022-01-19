@@ -3,11 +3,13 @@
 <main>
 
 <section class="left-bar">
-    <a href (click)="show()"> show </a>
+    <a href (click)="show($event)"> show </a>
 </section>
 <section class="left-overlay" [class.in]="renderOverlay">
-    <a href (click)="hide()"> Hide </a>
+    <a href (click)="hide($event)"> Hide </a>
 </section>
-<section class="main-content"></section>
+<section class="main-content">
+
+<h1> Heading content </h1></section>
 
 </main>
