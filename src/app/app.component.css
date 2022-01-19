@@ -3,3 +3,26 @@ header {
   height: 60px;
   background-color: #1776BF;
 }
+
+main {
+  display: flex;
+}
+
+.left-bar {
+  height: calc(100vh - 60px);
+  width: 60px;
+  border-right: 1px solid #CCC;
+}
+
+.left-overlay {
+  position: fixed;
+  left: -300px;
+  width: 300px;
+  transition: all 0.5s ease-in-out;
+
+  background-color: lightcyan;
+}
+
+.left-overlay.in {
+  left: 0px;
+}
