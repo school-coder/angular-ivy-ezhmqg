@@ -7,4 +7,14 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
+
+  renderOverlay=false;
+
+  show() {
+    this.renderOverlay = true;
+  }
+
+  hide() {
+    this.renderOverlay = false;
+  }
 }

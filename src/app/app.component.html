@@ -3,8 +3,11 @@
 <main>
 
 <section class="left-bar">
+    <a href (click)="show()"> show </a>
 </section>
-<section class="left-overlay"></section>
+<section class="left-overlay" [class.in]="renderOverlay">
+    <a href (click)="hide()"> Hide </a>
+</section>
 <section class="main-content"></section>
 
 </main>
